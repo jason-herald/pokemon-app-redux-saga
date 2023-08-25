@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IMAGE_URL } from "../constants/constants";
+
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL;
 
 function PokemonCard({ pokemon }) {
   if (!pokemon) {

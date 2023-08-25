@@ -1,4 +1,4 @@
-import { BASE_URL } from "../constants/constants";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 export async function fetchPokemonList() {
   const response = await fetch(`${BASE_URL}/pokemon`);

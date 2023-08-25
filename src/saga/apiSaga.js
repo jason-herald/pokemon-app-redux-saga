@@ -20,5 +20,5 @@ function* fetchPokemonDataSaga() {
 }
 
 export function* apiSaga() {
-  yield takeEvery("FETCH_POKEMON_DATA", fetchPokemonDataSaga);
+  yield takeEvery("pokemon/fetchData", fetchPokemonDataSaga);
 }

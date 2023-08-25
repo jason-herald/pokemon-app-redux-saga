@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
 
-import { IMAGE_URL } from "../../constants/constants";
 import { fetchPokemonData } from "../../store/pokemonActions";
 
 import "./ProductDescriptionPage.css";
+
+const IMAGE_URL = import.meta.env.VITE_IMAGE_URL;
 
 function ProductDescriptionPage() {
   const pokemonDetails = useSelector((state) => state.pokemonList);
